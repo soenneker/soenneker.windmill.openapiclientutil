@@ -10,5 +10,10 @@ namespace Soenneker.Windmill.OpenApiClientUtil.Abstract;
 /// </summary>
 public interface IWindmillOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
+    /// <summary>
+    /// Gets the value.
+    /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    /// <returns>A task containing the result of the operation.</returns>
     ValueTask<WindmillOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
