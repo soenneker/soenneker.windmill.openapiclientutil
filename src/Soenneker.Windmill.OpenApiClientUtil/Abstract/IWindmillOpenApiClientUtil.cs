@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Windmill.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached Windmill API client backed by the configured HTTP transport.
 /// </summary>
-public interface IWindmillOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface IWindmillOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached Windmill API client.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The configured Windmill API client.</returns>
     ValueTask<WindmillOpenApiClient> Get(CancellationToken cancellationToken = default);
 }

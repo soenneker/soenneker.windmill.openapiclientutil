@@ -6,12 +6,12 @@ using Soenneker.Windmill.OpenApiClientUtil.Abstract;
 namespace Soenneker.Windmill.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers the cached Windmill API client provider.
 /// </summary>
 public static class WindmillOpenApiClientUtilRegistrar
 {
     /// <summary>
-    /// Adds <see cref="WindmillOpenApiClientUtil"/> as a singleton service. <para/>
+    /// Adds the Windmill API client provider as a singleton service.
     /// </summary>
     public static IServiceCollection AddWindmillOpenApiClientUtilAsSingleton(this IServiceCollection services)
     {
@@ -22,7 +22,7 @@ public static class WindmillOpenApiClientUtilRegistrar
     }
 
     /// <summary>
-    /// Adds <see cref="WindmillOpenApiClientUtil"/> as a scoped service. <para/>
+    /// Adds the Windmill API client provider as a scoped service while retaining the singleton HTTP transport.
     /// </summary>
     public static IServiceCollection AddWindmillOpenApiClientUtilAsScoped(this IServiceCollection services)
     {
