@@ -41,7 +41,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Windmill.HttpClients" Version="4.0.99" />
+        <PackageReference Include="Soenneker.Windmill.HttpClients" Version="4.0.100" />
         <PackageReference Include="Soenneker.Windmill.OpenApiClient" Version="4.0.85" />
     </ItemGroup>
 </Project>
