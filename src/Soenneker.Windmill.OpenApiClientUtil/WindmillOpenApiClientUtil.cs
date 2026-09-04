@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Windmill.OpenApiClientUtil;
 
+/// <inheritdoc cref="IWindmillOpenApiClientUtil" />
 public sealed class WindmillOpenApiClientUtil : IWindmillOpenApiClientUtil
 {
     private readonly AsyncSingleton<WindmillOpenApiClient> _client;
